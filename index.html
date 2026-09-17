@@ -365,7 +365,7 @@ body.lang-am { font-family: 'Noto Sans Ethiopic', 'Inter', system-ui, sans-serif
 .payment-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 22px; margin-bottom: 30px; }
 .payment-card { background: linear-gradient(145deg, #ffffff, #f4f9fe); border-radius: 22px; padding: 26px 20px; flex: 1 1 230px; max-width: 280px; text-align: center; border: 2px solid #dbeaf5; transition: all 0.3s; box-shadow: 0 6px 0 #dce9f5, 0 12px 24px rgba(30,58,95,0.08); display: flex; flex-direction: column; align-items: center; }
 .payment-card:hover { border-color: #2a6f97; transform: translateY(-8px); box-shadow: 0 12px 0 #c4d9e9, 0 24px 38px -10px rgba(30,58,95,0.22); }
-/* Clean icon-based payment logos (no broken images) */
+/* Clean icon-based payment logos — NO image files */
 .payment-logo {
   width: 100px;
   height: 100px;
@@ -1350,7 +1350,6 @@ footer { padding: 40px 0 28px; border-top: 2px solid rgba(255,255,255,0.15); col
       tutorialIcon.style.background = data.color;
       tutorialIcon.innerHTML = '<i class="' + data.icon + '"></i>';
 
-      // Videos — real YouTube embeds
       tutorialVideos.innerHTML = data.videos.map(v => `
         <div class="video-card">
           <iframe src="${v.url}" allowfullscreen loading="lazy"></iframe>
@@ -1358,7 +1357,6 @@ footer { padding: 40px 0 28px; border-top: 2px solid rgba(255,255,255,0.15); col
         </div>
       `).join('');
 
-      // Documents — real download links that open in new tab
       tutorialDocs.innerHTML = data.docs.map(d => `
         <a href="${d.url}" target="_blank" rel="noopener" class="doc-item">
           <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
