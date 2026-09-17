@@ -365,7 +365,7 @@ body.lang-am { font-family: 'Noto Sans Ethiopic', 'Inter', system-ui, sans-serif
 .payment-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 22px; margin-bottom: 30px; }
 .payment-card { background: linear-gradient(145deg, #ffffff, #f4f9fe); border-radius: 22px; padding: 26px 20px; flex: 1 1 230px; max-width: 280px; text-align: center; border: 2px solid #dbeaf5; transition: all 0.3s; box-shadow: 0 6px 0 #dce9f5, 0 12px 24px rgba(30,58,95,0.08); display: flex; flex-direction: column; align-items: center; }
 .payment-card:hover { border-color: #2a6f97; transform: translateY(-8px); box-shadow: 0 12px 0 #c4d9e9, 0 24px 38px -10px rgba(30,58,95,0.22); }
-/* Clean icon-based payment logos — NO image files */
+/* ===== FIXED: NO IMG TAGS — ONLY FONT AWESOME ICONS ===== */
 .payment-logo {
   width: 100px;
   height: 100px;
@@ -378,7 +378,6 @@ body.lang-am { font-family: 'Noto Sans Ethiopic', 'Inter', system-ui, sans-serif
   padding: 10px;
   box-shadow: 0 10px 22px rgba(0,0,0,0.12), 0 4px 0 #e8f1f9;
   border: 2px solid #e8f1f9;
-  overflow: hidden;
 }
 .payment-logo i {
   font-size: 3.4rem;
@@ -751,6 +750,7 @@ footer { padding: 40px 0 28px; border-top: 2px solid rgba(255,255,255,0.15); col
     <h2 class="section-title"><i class="fas fa-credit-card" style="margin-right:8px;"></i> <span data-en="Flexible Payment Options" data-am="ተለዋዋጭ የክፍያ አማራጮች">Flexible Payment Options</span></h2>
     <p class="section-sub" data-en="Pay securely using Telebirr or CBE — local, fast, and convenient." data-am="በቴሌብር ወይም በCBE በደህንነት ይክፈሉ — አካባቢያዊ፣ ፈጣን እና ምቹ።">Pay securely using Telebirr or CBE — local, fast, and convenient.</p>
     <div class="payment-grid">
+      <!-- Telebirr - NO IMG, ONLY ICON -->
       <div class="payment-card">
         <div class="payment-logo telebirr-logo">
           <i class="fas fa-mobile-alt"></i>
@@ -763,6 +763,7 @@ footer { padding: 40px 0 28px; border-top: 2px solid rgba(255,255,255,0.15); col
         </button>
         <div class="note" data-en="Click to get payment details & order" data-am="የክፍያ ዝርዝር ለማግኘት ይጫኑ">Click to get payment details & order</div>
       </div>
+      <!-- CBE - NO IMG, ONLY ICON -->
       <div class="payment-card">
         <div class="payment-logo cbe-logo">
           <i class="fas fa-university"></i>
@@ -775,6 +776,7 @@ footer { padding: 40px 0 28px; border-top: 2px solid rgba(255,255,255,0.15); col
         </button>
         <div class="note" data-en="Click to get payment details & order" data-am="የክፍያ ዝርዝር ለማግኘት ይጫኑ">Click to get payment details & order</div>
       </div>
+      <!-- Other methods -->
       <div class="payment-card">
         <div class="payment-icon pink"><i class="fas fa-receipt"></i></div>
         <h4 data-en="Other methods" data-am="ሌሎች ዘዴዎች">Other methods</h4>
